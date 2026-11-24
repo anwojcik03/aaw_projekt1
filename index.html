@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matma bez stresu – Kurs maturalny z matematyki online</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- SEKCJA 1: HERO -->
+  <header class="hero">
+    <div class="container">
+      <span class="badge">Kurs maturalny z matematyki online • „Matma bez stresu”</span>
+      <h1>Przećwicz maturalne schematy z egzaminatorami CKE i idź na egzamin z gotowym planem działania.</h1>
+      <p class="hero-subtitle">
+        Dla maturzystów, którzy chcą zdać bez stresu i zgadywania wyników. Sprawdź nasz styl nauki w domu i pogódź przygotowania ze szkołą.
+      </p>
+      <a href="#lead-form" id="cta-hero" class="btn btn-primary" data-cta-location="hero">
+        Zapisz się na darmową lekcję próbną
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <!-- SEKCJA 2: OFERTA -->
+    <section id="oferta" class="section section-offer">
+      <div class="container">
+        <h2>Jak to działa?</h2>
+        <p class="section-intro">Zapomnij o nudnych wykładach. Skupiamy się na praktyce i konkretnych typach zadań maturalnych:</p>
+        
+        <ul class="benefits-list">
+          <li>
+            <strong>Praca w małych grupach (4–7 osób)</strong> – kameralne warunki pozwalające na bieżący kontakt z prowadzącym.
+          </li>
+          <li>
+            <strong>Nauka algorytmów i „pewniaków” maturalnych</strong> – przejrzyste schematy rozwiązywania zadań bez zgadywania.
+          </li>
+          <li>
+            <strong>Dostęp do nagrań VOD oraz gotowych szablonów odpowiedzi</strong> – możesz wrócić do materiału w dowolnym momencie.
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- SEKCJA 3: AUTORYTET I CENA -->
+    <section id="autorytet-cena" class="section section-authority">
+      <div class="container">
+        <div class="authority-box">
+          <h2>Ucz się od tych, którzy sprawdzają arkusze</h2>
+          <p>
+            Zajęcia prowadzą wyłącznie <strong>certyfikowani egzaminatorzy maturalni CKE</strong>. Gwarantujemy naukę bezpośrednio pod oficjalny klucz oceniania.
+          </p>
+        </div>
+
+        <div class="pricing-box">
+          <h3>Pełny Pakiet Maturalny</h3>
+          <p class="price">99 zł <span>/ lekcję</span></p>
+          <p class="price-note">Możliwość płatności w ratach. Brak ukrytych opłat.</p>
+          <a href="#lead-form" id="cta-oferta" class="btn btn-secondary" data-cta-location="oferta">
+            Zapisz się na darmową lekcję próbną
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEKCJA 4: FORMULARZ -->
+    <section id="rejestracja" class="section section-form">
+      <div class="container">
+        <h2>Przetestuj za darmo – odbierz lekcję próbną</h2>
+        <p class="section-intro">Wypełnij poniższe dane, aby zarezerwować miejsce na bezpłatnych zajęciach pokazowych (wersja demonstracyjna).</p>
+
+        <form id="lead-form" novalidate>
+          <div class="form-group">
+            <label for="first-name">Imię <span class="required" aria-hidden="true">*</span></label>
+            <input type="text" id="first-name" name="first-name" placeholder="Wpisz swoje imię" required>
+            <span class="error-msg" id="error-name" aria-live="polite"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Adres e-mail (fikcyjny do testu) <span class="required" aria-hidden="true">*</span></label>
+            <input type="email" id="email" name="email" placeholder="np. test@example.com" required>
+            <span class="error-msg" id="error-email" aria-live="polite"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="math-level">Poziom matury <span class="required" aria-hidden="true">*</span></label>
+            <select id="math-level" name="math-level" required>
+              <option value="">Wybierz poziom...</option>
+              <option value="podstawa">Poziom podstawowy</option>
+              <option value="rozszerzenie">Poziom rozszerzony</option>
+            </select>
+            <span class="error-msg" id="error-level" aria-live="polite"></span>
+          </div>
+
+          <button type="submit" id="submit-btn" class="btn btn-primary btn-full">
+            Zarezerwuj miejsce
+          </button>
+
+          <div id="form-feedback" class="form-feedback" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>Projekt edukacyjny / oferta demonstracyjna – Kurs „Matma bez stresu”.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
